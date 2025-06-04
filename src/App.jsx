@@ -2,6 +2,7 @@ import React from 'react';
 import CalendlyEmbed from "./CalendlyEmbed";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { colors } from '@mui/material'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function Home() {
   return (
