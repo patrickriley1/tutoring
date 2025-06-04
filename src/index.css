@@ -1,0 +1,93 @@
+/* CSS HEX */
+:root {
+  --barn-red: #7a1400ff;
+  --floral-white: #fbfbf2ff;
+  --ash-gray: #b4b6a5ff;
+  --raisin-black: #1e1e24ff;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #191919;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+
+  .navlist:hover{
+  color: #0A58FF !important;
+}
+
+.navlist {
+    position: relative;
+  text-decoration: none;
+}
+
+.navlist::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0A58FF; /* blue underline */
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* adjust for spacing below text */
+}
+
+.navlist:hover::after,
+.navlist:focus::after {
+  width: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #BEB7A4;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: rgb(69, 69, 69);
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.cta-btn:hover{
+  box-shadow: #0A58FF 0px 0px 15px;
+  transform: scale(1.07);
+}
+
+.subjects-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.subjects-list li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 8px;
+}
+
+.subjects-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #0A58FF;
+  font-size: 1.1em;
+  font-weight: bold;
+}
