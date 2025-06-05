@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import CalendlyEmbed from "./CalendlyEmbed";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { colors } from '@mui/material'
@@ -86,7 +87,7 @@ function Contact() {
 
 function App() {
   return (
-    <Router>
+    <><Router>
       <div
         style={{
           minHeight: '100vh',
@@ -110,25 +111,25 @@ function App() {
               alignContent: 'center',
               justifyContent: 'center',
             }}>
-          <div>
-          <h1 style={{ marginTop: 0, }}>
-            <span style={{ color: '#FFFFFC' }}>Patrick Riley </span>
-            <span style={{ color: '#0A58FF' }}>Tutoring</span>
-          </h1>
-          </div>
-          <nav>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '16px 0' }}>
-              <li style={{ display: 'inline', marginRight: 16 }}>
-                <Link to="/" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Home</Link>
-              </li>
-              <li style={{ display: 'inline', marginRight: 16 }}>
-                <Link to="/schedule" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Schedule</Link>
-              </li>
-              <li style={{ display: 'inline' }}>
-                <Link to="/contact" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Contact</Link>
-              </li>
-            </ul>
-          </nav>
+            <div>
+              <h1 style={{ marginTop: 0, }}>
+                <span style={{ color: '#FFFFFC' }}>Patrick Riley </span>
+                <span style={{ color: '#0A58FF' }}>Tutoring</span>
+              </h1>
+            </div>
+            <nav>
+              <ul style={{ listStyle: 'none', padding: 0, margin: '16px 0' }}>
+                <li style={{ display: 'inline', marginRight: 16 }}>
+                  <Link to="/" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Home</Link>
+                </li>
+                <li style={{ display: 'inline', marginRight: 16 }}>
+                  <Link to="/schedule" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Schedule</Link>
+                </li>
+                <li style={{ display: 'inline' }}>
+                  <Link to="/contact" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Contact</Link>
+                </li>
+              </ul>
+            </nav>
           </div>
           {/* This is where the different pages are rendered */}
           <Routes>
@@ -138,7 +139,7 @@ function App() {
           </Routes>
         </div>
       </div>
-    </Router>
+    </Router><Analytics /></>
   );
 }
 
