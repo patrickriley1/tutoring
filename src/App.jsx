@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import CalendlyEmbed from "./CalendlyEmbed";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { colors } from '@mui/material'
+import Schedule from "./schedule";
 
 function Home() {
   return (
@@ -56,18 +57,6 @@ function Home() {
         <h3 style={{ color: '#FFFFFC', marginBottom: 16}}>Frequently Asked Questions</h3>
       </div>
       <FAQ />
-    </main>
-  );
-}
-
-function Schedule() {
-  return (
-    <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
-      <h2>Book a Session</h2>
-          <p>Use the calendar below to schedule your session!</p>
-          <div style={{ borderRadius: '50px', padding: '0',}}>
-            <CalendlyEmbed url="https://calendly.com/patrickrileytutoring" />
-          </div>
     </main>
   );
 }
