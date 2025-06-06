@@ -7,7 +7,16 @@ const [selectedSession, setSelectedSession] = React.useState(null);
 // This tracks which type of session the user has selected
 const [visible, setVisible] = React.useState(false);
 // This tracks whether the session options are visible or not
-
+const calendlyUrls = {
+  "individual-math": "https://calendly.com/patrickrileytutoring/1-hour-session-virtual",
+  "individual-act": "https://calendly.com/patrickrileytutoring/30min",
+  "individual-sat": "https://calendly.com/patrickrileytutoring/2-hour-session",
+  "group-act": "https://calendly.com/patrickrileytutoring/group-act",
+  "group-sat": "https://calendly.com/patrickrileytutoring/group-sat",
+  "individual-online-sat": "https://calendly.com/patrickrileytutoring/individual-online-sat",
+  "individual-online-act": "https://calendly.com/patrickrileytutoring/individual-online-act",
+  "individual-online-math": "https://calendly.com/patrickrileytutoring/individual-online-math",
+}
 useEffect(() => {
     const tid = setTimeout(() => {
         setVisible(true);
@@ -157,20 +166,23 @@ return (
               cursor: "pointer",
             }}
           >
-            ← Back
-          </button>
-          {/* You can pass a custom Calendly URL per session type if needed */}
+          ← Back
+        </button>
+        {/* You can pass a custom Calendly URL per session type if needed */}
+        <div
+          style={{
+            width: "100%",      
+            maxWidth: 900,     
+            margin: "0 auto",   
+            padding: "0 16px",  
+            boxSizing: "border-box",
+          }}>
           <CalendlyEmbed
-            url={
-              selectedSession.startsWith("individual")
-                ? "https://calendly.com/patrickrileytutoring/individual"
-                : "https://calendly.com/patrickrileytutoring/group"
-            }
-            // apply any inline overrides (e.g. borderRadius)
-            style={{ borderRadius: "8px", padding: "0" }}
+            url={calendlyUrls[selectedSession] || "https://calendly.com/patrickrileytutoring/default"}
           />
-        </>
-      )}
+        </div>
+      </>
+    )}
     </main>
   );
 }
