@@ -13,9 +13,9 @@ const calendlyUrls = {
   "individual-sat": "https://calendly.com/patrickrileytutoring/2-hour-session",
   "group-act": "https://calendly.com/patrickrileytutoring/group-act",
   "group-sat": "https://calendly.com/patrickrileytutoring/group-sat",
-  "individual-online-sat": "https://calendly.com/patrickrileytutoring/individual-online-sat",
-  "individual-online-act": "https://calendly.com/patrickrileytutoring/individual-online-act",
-  "individual-online-math": "https://calendly.com/patrickrileytutoring/individual-online-math",
+  "individual-online-sat": "https://calendly.com/patrickrileytutoring/online-sat-session",
+  "individual-online-act": "https://calendly.com/patrickrileytutoring/online-act-session",
+  "individual-online-math": "https://calendly.com/patrickrileytutoring/online-math-session",
 }
 useEffect(() => {
     const tid = setTimeout(() => {
