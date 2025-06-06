@@ -92,24 +92,24 @@ h1 {
   font-weight: bold;
 }
 
-.fade‐in {
+.fade-in {
   opacity: 0;
   transition: opacity 0.5s ease‐in;
 }
-.fade‐in.visible {
+.fade-in.visible {
   opacity: 1;
 }
 
-.fade‐in {
+.fade-in {
   opacity: 0;
   transition: opacity 0.5s ease‐in;
 }
-.fade‐in.visible {
+.fade-in.visible {
   opacity: 1;
 }
 
 /* Shared styling for our session buttons */
-.session‐button {
+.session-button {
   background: #0A58FF;
   color: #FFFFFC;
   border: none;
@@ -122,14 +122,14 @@ h1 {
   max-width: 240px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.session‐button:hover {
+.session-button:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(10, 88, 255, 0.3);
 }
 
 /* Columns stack on small screens */
 @media (max-width: 640px) {
-  .session‐grid {
+  .session-grid {
     flex-direction: column;
     align-items: center;
   }

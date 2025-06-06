@@ -19,7 +19,7 @@ return (
     <main
       className={`schedule-page fade-in ${visible ? "visible" : ""}`}
       style={{
-        padding: "40px 0",
+        padding: "0px 0",
         color: "#FFFFFC",
         minHeight: "100vh",
         display: "flex",
@@ -56,21 +56,21 @@ return (
               <h3 style={{ marginBottom: 16 }}>Individual Sessions</h3>
               <button
                 className="session-button"
-                onClick={() => setSelectedSession("individual‐math")}
+                onClick={() => setSelectedSession("individual-math")}
               >
-                Math (1:1)
+                Math Tutoring
               </button>
               <button
                 className="session-button"
-                onClick={() => setSelectedSession("individual‐act")}
+                onClick={() => setSelectedSession("individual-act")}
               >
-                ACT Tutoring (1:1)
+                ACT Tutoring
               </button>
               <button
                 className="session-button"
-                onClick={() => setSelectedSession("individual‐sat")}
+                onClick={() => setSelectedSession("individual-sat")}
               >
-                SAT Tutoring (1:1)
+                SAT Tutoring
               </button>
             </div>
 
@@ -80,7 +80,7 @@ return (
               style={{
                 flex: 1,
                 minWidth: 280,
-                background: "rgba(255,255,255,0.05)",
+                background: "rgba(255, 255, 255, 0.05)",
                 borderRadius: 12,
                 padding: 24,
                 textAlign: "center",
@@ -89,22 +89,54 @@ return (
               <h3 style={{ marginBottom: 16 }}>Group Sessions</h3>
               <button
                 className="session-button"
-                onClick={() => setSelectedSession("group‐math")}
-              >
-                Math Study Group
-              </button>
-              <button
-                className="session-button"
-                onClick={() => setSelectedSession("group‐act")}
+                onClick={() => setSelectedSession("group-act")}
               >
                 ACT Prep Group
               </button>
               <button
                 className="session-button"
-                onClick={() => setSelectedSession("group‐sat")}
+                onClick={() => setSelectedSession("group-sat")}
               >
                 SAT Prep Group
               </button>
+            </div>
+
+            <div
+              className="column"
+              style={{
+                flex: 1,
+                minWidth: 280,
+                background: "rgba(255, 255, 255, 0.05)",
+                borderRadius: 12,
+                padding: 24,
+                textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                gap: "4px",
+                alignItems: "center",
+                }}>
+                <h3 style={{ marginBottom: 8 }}>Online Individual Sessions</h3>
+                <p style={{ marginBottom: 16 }}>
+                  All sessions are conducted online via Zoom.
+                </p>
+                <button
+                  className="session-button"
+                  onClick={() => setSelectedSession("individual-online")}
+                >
+                    Online ACT Tutoring
+                </button>
+                <button
+                  className="session-button"
+                  onClick={() => setSelectedSession("individual-online-sat")} 
+                >
+                    Online SAT Tutoring
+                </button>
+                <button
+                  className="session-button"
+                  onClick={() => setSelectedSession("individual-online-math")}
+                >
+                    Online Math Tutoring
+                </button>
             </div>
           </div>
         </>
