@@ -91,7 +91,7 @@ function App() {
             borderRadius: 18,
             fontFamily: 'sans-serif',
             textAlign: 'center',
-            display: 'inline-block',
+            width: '100%',
           }}
         >
           <div
