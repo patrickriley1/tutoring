@@ -51,6 +51,8 @@ function Home() {
           <li>Calculus</li>
           <li>ACT Preparation</li>
           <li>SAT Preparation</li>
+          <li>Chemistry</li>
+          <li>Physics</li>
         </ul>
       </div>
       <div>
@@ -70,6 +72,15 @@ function Contact() {
       </p>
       <p>Email: <a href="mailto:patrickrileytutoring@gmail.com" >patrickrileytutoring@gmail.com</a></p>
       <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
+      <p>Youtube: <a href="https://www.youtube.com/@patrickrileytutoring">https://www.youtube.com/@patrickrileytutoring</a></p>
+    </main>
+  );
+}
+
+function Resources() {
+  return (
+    <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
+      <h2>Resources</h2>  
     </main>
   );
 }
@@ -114,8 +125,11 @@ function App() {
                 <li style={{ display: 'inline', marginRight: 16 }}>
                   <Link to="/schedule" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Schedule</Link>
                 </li>
-                <li style={{ display: 'inline' }}>
+                <li style={{ display: 'inline', marginRight: 16 }}>
                   <Link to="/contact" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Contact</Link>
+                </li>
+                <li style={{ display: 'inline' }}>
+                  <Link to="/resources" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Resources</Link>
                 </li>
               </ul>
             </nav>
@@ -125,6 +139,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </div>
       </div>
@@ -199,9 +214,8 @@ const faqData = [
   },
   {
     question: "What is your cancellation policy?",
-    answer: "I understand that life can be unpredictable. If you need to cancel/reschedule, please try to give at least 24 hours' notice. Same-day cancellations will be charged a flat fee of $15.",
+    answer: "I understand that life can be unpredictable. If you need to cancel/reschedule, please try to give at least 24 hours' notice. Same-day cancellations will be charged a flat fee of $15. No-shows will be charged the full session rate.",
   }
-  // Add more as needed
 ];
 
 

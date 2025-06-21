@@ -11,8 +11,6 @@ const calendlyUrls = {
   "individual-math": "https://calendly.com/patrickrileytutoring/1-hour-session-virtual",
   "individual-act": "https://calendly.com/patrickrileytutoring/30min",
   "individual-sat": "https://calendly.com/patrickrileytutoring/2-hour-session",
-  "group-act": "https://calendly.com/patrickrileytutoring/group-act",
-  "group-sat": "https://calendly.com/patrickrileytutoring/group-sat",
   "individual-online-sat": "https://calendly.com/patrickrileytutoring/online-sat-session",
   "individual-online-act": "https://calendly.com/patrickrileytutoring/online-act-session",
   "individual-online-math": "https://calendly.com/patrickrileytutoring/online-math-session",
@@ -62,7 +60,7 @@ return (
                 textAlign: "center",
               }}
             >
-              <h3 style={{ marginBottom: 16 }}>Individual Sessions</h3>
+              <h3 style={{ marginBottom: 16 }}>In-Person Sessions</h3>
               <button
                 className="session-button"
                 onClick={() => setSelectedSession("individual-math")}
@@ -83,33 +81,6 @@ return (
               </button>
             </div>
 
-            {/* Group Sessions Column */}
-            <div
-              className="column"
-              style={{
-                flex: 1,
-                minWidth: 280,
-                background: "rgba(255, 255, 255, 0.05)",
-                borderRadius: 12,
-                padding: 24,
-                textAlign: "center",
-              }}
-            >
-              <h3 style={{ marginBottom: 16 }}>Group Sessions</h3>
-              <button
-                className="session-button"
-                onClick={() => setSelectedSession("group-act")}
-              >
-                ACT Prep Group
-              </button>
-              <button
-                className="session-button"
-                onClick={() => setSelectedSession("group-sat")}
-              >
-                SAT Prep Group
-              </button>
-            </div>
-
             <div
               className="column"
               style={{
@@ -124,13 +95,10 @@ return (
                 gap: "4px",
                 alignItems: "center",
                 }}>
-                <h3 style={{ marginBottom: 8 }}>Online Individual Sessions</h3>
-                <p style={{ marginBottom: 16 }}>
-                  All sessions are conducted online via Zoom.
-                </p>
+                <h3 style={{ marginBottom: 8 }}>Online Sessions</h3>
                 <button
                   className="session-button"
-                  onClick={() => setSelectedSession("individual-online")}
+                  onClick={() => setSelectedSession("individual-online-act")}
                 >
                     Online ACT Tutoring
                 </button>
@@ -146,6 +114,9 @@ return (
                 >
                     Online Math Tutoring
                 </button>
+                                <p style={{ marginTop: 16 }}>
+                  All online sessions are conducted via Zoom.
+                </p>
             </div>
           </div>
         </>
