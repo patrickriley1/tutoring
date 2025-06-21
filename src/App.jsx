@@ -225,6 +225,10 @@ const faqData = [
     answer: "For one-on-one sessions, I offer in-person tutoring in the Fort Myers area (location of your choice - student's house, public library, etc.) and online sessions via Zoom. For group sessions, we will typically meet at Southwest Florida Christian Academy (3750 Colonial Blvd), but I can also arrange online sessions if needed.",
   },
   {
+    question: "What length of session do you recommend?",
+    answer: "I'd say it depends. For most subjects, 1 hour per week is sufficient, but that depends on a variety of factors, such as the difficulty of the subject, the urgency of improvement and others. I recommend starting with 1 hour per week for most subjects, and then we can adjust as needed.",
+  },
+  {
     question: "What are your rates?",
     answer: "My rates are $50/hr for in-person individual sessions ($40/hr for virtual) and $30/hr per student for group sessions.",
   },
