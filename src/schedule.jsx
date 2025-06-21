@@ -152,6 +152,7 @@ return (
             url={calendlyUrls[selectedSession] || "https://calendly.com/patrickrileytutoring/default"}
           />
         </div>
+        <p>If the page is blank, please refresh the page.</p>
       </>
     )}
     </main>

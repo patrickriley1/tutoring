@@ -78,9 +78,29 @@ function Contact() {
 }
 
 function Resources() {
+
+const resources = [
+  {
+    title: "ACT Prep Resources",
+  },
+  {
+    title: "SAT Prep Resources",
+  },
+  {
+    
+  }
+]
   return (
     <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
-      <h2>Resources</h2>  
+      <h2>Resources</h2>
+      <div>
+        {resources.map((resource, idx) => (
+        <div key={idx}>
+          <h3>{resource.title}</h3>
+          <p>{resource.description}</p>
+        </div>
+        ))}
+      </div>
     </main>
   );
 }
