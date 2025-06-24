@@ -4,17 +4,22 @@ import CalendlyEmbed from "./CalendlyEmbed";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { colors } from '@mui/material'
 import Schedule from "./schedule";
+import Patrick from "./Patrick.JPG";
+import Patrick1 from "./Patrick1.JPG";
 
 function Home() {
   return (
     <main style={{ padding: '0 0', textAlign: 'center' }}>
-      <h2 style={{color: '#FFFFFC'}}>Math, ACT, and SAT Tutoring</h2>
-      <p style={{ color: '#FFFFFC' }}>
-        Welcome! I'm Patrick Riley, a tutor specializing in math, ACT, and SAT preparation.
-        I won salutatorian of my high school class at Southwest Florida Christian Academy, and I currently attend Florida Gulf Coast University, where I am studying Software Engineering.
-        I have been tutoring since my high school days, and I learned methods of preparing for standardized tests that helped me score a 34 on the ACT.
-        I have a passion for teaching, and I love seeing students excel! Whether you're struggling with algebra, learning geometry for the first time, or preparing for the ACT or SAT, I'm here to help you succeed! Book a session today!
-      </p>
+      <h2 style={{ color: '#FFFFFC' }}>Math, ACT, and SAT Tutoring</h2>
+      <div style={{ display: "flex", alignContent : "center", justifyContent: "center", margin: "0 auto", gap: '16px' }}>
+        <p style={{ color: '#FFFFFC'}}>
+          Welcome! I'm Patrick Riley, a tutor specializing in math, ACT, and SAT preparation.
+          I won salutatorian of my high school class at Southwest Florida Christian Academy, and I currently attend Florida Gulf Coast University, where I am studying Software Engineering.
+          I have been tutoring since my high school days, and I learned methods of preparing for standardized tests that helped me score a 34 on the ACT.
+          I have a passion for teaching, and I love seeing students excel! Whether you're struggling with algebra, learning geometry for the first time, or preparing for the ACT or SAT, I'm here to help you succeed! Book a session today!
+        </p>
+        <img src={Patrick1} alt="Photo of me" id="photoPatrick" />
+      </div>
       <a
         className="cta-btn"
         href="/schedule"

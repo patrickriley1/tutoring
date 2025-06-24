@@ -140,3 +140,12 @@ h1 {
     align-items: center;
   }
 }
+
+img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0,0,0,1);
+  margin-left: 32px;
+  object-fit: cover;
+}
