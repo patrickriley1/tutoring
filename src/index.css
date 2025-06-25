@@ -141,33 +141,35 @@ h1 {
   }
 }
 
-#photoPatrick {
-  max-width: 220px;
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
-  margin-left: 32px;
-  object-fit: cover;
-}
-
-#bio-container{
+#bio-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin: 32px 0;
+  gap: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 36px auto;
+  box-sizing: border-box;
+  padding: 0 16px;
 }
-
-@media (max-width: 640px) {
+#photoPatrick {
+  width: 170px;
+  max-width: 40vw;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+@media (max-width: 700px) {
   #bio-container {
     flex-direction: column;
-    text-align: center;
     gap: 16px;
+    text-align: center;
+    max-width: 95vw;
+    padding: 0 8px;
   }
   #photoPatrick {
-    margin-left: 0;
-    margin-bottom: 16px;
+    margin: 0;
+    width: 70vw;
+    max-width: 290px;
   }
 }
-

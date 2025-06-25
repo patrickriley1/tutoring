@@ -9,16 +9,32 @@ import Patrick1 from "./Patrick1.JPG";
 
 function Home() {
   return (
-    <main style={{ padding: '0 0', textAlign: 'center' }}>
+    <main style={{ maxWidth: '900px', margin: '0 auto', padding: '0 0', textAlign: 'center' }}>
       <h2 style={{ color: '#FFFFFC' }}>Math, ACT, and SAT Tutoring</h2>
-      <div id="bio-container"style={{ display: "flex", alignContent : "center", justifyContent: "center", margin: "0 auto", gap: '16px' }}>
-        <p style={{ color: '#FFFFFC'}}>
+      <div id="bio-container" style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "24px",
+        width: "100%",
+        maxWidth: "700px",
+        margin: "0 auto 36px auto", // centers and adds spacing
+        boxSizing: "border-box",
+        padding: "0 16px"
+      }}>
+        <p style={{ color: '#FFFFFC' }}>
           Welcome! I'm Patrick Riley, a tutor specializing in math, ACT, and SAT preparation.
           I won salutatorian of my high school class at Southwest Florida Christian Academy, and I currently attend Florida Gulf Coast University, where I am studying Software Engineering.
           I have been tutoring since my high school days, and I learned methods of preparing for standardized tests that helped me score a 34 on the ACT.
           I have a passion for teaching, and I love seeing students excel! Whether you're struggling with algebra, learning geometry for the first time, or preparing for the ACT or SAT, I'm here to help you succeed! Book a session today!
         </p>
-        <img src={Patrick1} alt="Photo of me" id="photoPatrick" />
+        <img src={Patrick1} alt="Photo of me" id="photoPatrick" style={{
+          width: "170px",
+          maxWidth: "40vw",
+          height: "auto",
+          borderRadius: "18px",
+          boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
+        }} />
       </div>
       <a
         className="cta-btn"
