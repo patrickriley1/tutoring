@@ -11,7 +11,7 @@ function Home() {
   return (
     <main style={{ padding: '0 0', textAlign: 'center' }}>
       <h2 style={{ color: '#FFFFFC' }}>Math, ACT, and SAT Tutoring</h2>
-      <div style={{ display: "flex", alignContent : "center", justifyContent: "center", margin: "0 auto", gap: '16px' }}>
+      <div id="bio-container"style={{ display: "flex", alignContent : "center", justifyContent: "center", margin: "0 auto", gap: '16px' }}>
         <p style={{ color: '#FFFFFC'}}>
           Welcome! I'm Patrick Riley, a tutor specializing in math, ACT, and SAT preparation.
           I won salutatorian of my high school class at Southwest Florida Christian Academy, and I currently attend Florida Gulf Coast University, where I am studying Software Engineering.
