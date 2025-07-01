@@ -7,6 +7,8 @@ import Schedule from "./schedule";
 import Patrick from "./Patrick.JPG";
 import Patrick1 from "./Patrick1.JPG";
 import Resources from "./resources";
+import ActResources from "./Resources/actResources";
+import Algebra1Resources from "./Resources/algebra1Resources";
 
 function Home() {
   return (
@@ -155,9 +157,9 @@ function App() {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
-            <Route path="/resources/act" element={< actResources />} />
+            <Route path="/resources/act" element={< ActResources />} />
             <Route path="/resources/sat" element={< satResources />} />
-            <Route path="/resources/algebra1" element={< algebra1Resources />} />
+            <Route path="/resources/algebra1" element={< Algebra1Resources />} />
             <Route path="/resources/geometry" element={< geometryResources />} />
             <Route path="/resources/algebra2" element={< algebra2Resources />} />
             <Route path="/resources/precalculus" element={< precalculusResources />} />

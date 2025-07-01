@@ -1,10 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function actResources() {
+export default function ActResources() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <h2>ACT Resources</h2>
-            <p>Here you'll find resources to help you prepare for the ACT.</p>
+            <div className="flex justify-center">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/dWN_LZkQtOA"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
         </div>
     );
 }
