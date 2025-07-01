@@ -6,6 +6,7 @@ import { colors } from '@mui/material'
 import Schedule from "./schedule";
 import Patrick from "./Patrick.JPG";
 import Patrick1 from "./Patrick1.JPG";
+import Resources from "./resources";
 
 function Home() {
   return (
@@ -28,8 +29,8 @@ function Home() {
           I have been tutoring since my high school days, and I learned methods of preparing for standardized tests that helped me score a 34 on the ACT.
           I have a passion for teaching, and I love seeing students excel! Whether you're struggling with algebra, learning geometry for the first time, or preparing for the ACT or SAT, I'm here to help you succeed! Book a session today!
         </p>
-        <img src={Patrick1} alt="Photo of me" id="photoPatrick" style={{
-          width: "170px",
+        <img src={Patrick} alt="Photo of me" id="photoPatrick" style={{
+          width: "280px",
           maxWidth: "40vw",
           height: "auto",
           borderRadius: "18px",
@@ -98,33 +99,6 @@ function Contact() {
   );
 }
 
-function Resources() {
-
-const resources = [
-  {
-    title: "ACT Prep Resources",
-  },
-  {
-    title: "SAT Prep Resources",
-  },
-  {
-    
-  }
-]
-  return (
-    <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
-      <h2>Resources</h2>
-      <div>
-        {resources.map((resource, idx) => (
-        <div key={idx}>
-          <h3>{resource.title}</h3>
-          <p>{resource.description}</p>
-        </div>
-        ))}
-      </div>
-    </main>
-  );
-}
 
 function App() {
   return (
@@ -181,6 +155,15 @@ function App() {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/act" element={< actResources />} />
+            <Route path="/resources/sat" element={< satResources />} />
+            <Route path="/resources/algebra1" element={< algebra1Resources />} />
+            <Route path="/resources/geometry" element={< geometryResources />} />
+            <Route path="/resources/algebra2" element={< algebra2Resources />} />
+            <Route path="/resources/precalculus" element={< precalculusResources />} />
+            <Route path="/resources/calculus" element={< calculusResources />} />
+            <Route path="/resources/chemistry" element={< chemistryResources />} />
+            <Route path="/resources/physics" element={< physicsResources />} />
           </Routes>
         </div>
       </div>
