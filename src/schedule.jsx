@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from "react";
 import CalendlyEmbed from "./CalendlyEmbed";
+import { useNavigate } from "react-router-dom";
 
 export default function Schedule() {
 
@@ -7,6 +8,7 @@ const [selectedSession, setSelectedSession] = React.useState(null);
 // This tracks which type of session the user has selected
 const [visible, setVisible] = React.useState(false);
 // This tracks whether the session options are visible or not
+const navigate = useNavigate();
 const calendlyUrls = {
   "individual-math": "https://calendly.com/patrickrileytutoring/1-hour-session-virtual",
   "individual-act": "https://calendly.com/patrickrileytutoring/30min",
@@ -14,6 +16,7 @@ const calendlyUrls = {
   "individual-online-sat": "https://calendly.com/patrickrileytutoring/online-sat-session",
   "individual-online-act": "https://calendly.com/patrickrileytutoring/online-act-session",
   "individual-online-math": "https://calendly.com/patrickrileytutoring/online-math-session",
+  "upcoming-group-sessions": "https://calendly.com/patrickrileytutoring/upcoming-group-sessions",
 }
 useEffect(() => {
     const tid = setTimeout(() => {
@@ -118,6 +121,26 @@ return (
                   All online sessions are conducted via Zoom.
                 </p>
             </div>
+                        <div
+              className="column"
+              style={{
+                flex: 1,
+                minWidth: 280,
+                background: "rgba(255,255,255,0.05)",
+                borderRadius: 12,
+                padding: 24,
+                textAlign: "center",
+              }}
+            >
+              <h3 style={{ marginBottom: 16 }}>Group Sessions</h3>
+              <button
+                className="session-button"
+                onClick={() => navigate("/schedule/group")}
+              >
+                Upcoming Group Sessions
+              </button>
+            </div>
+
           </div>
         </>
       )}

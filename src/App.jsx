@@ -9,11 +9,12 @@ import Patrick1 from "./Patrick1.JPG";
 import Resources from "./resources";
 import ActResources from "./Resources/actResources";
 import Algebra1Resources from "./Resources/algebra1Resources";
+import GroupSessions from "./Groupsessions.jsx";
 
 function Home() {
   return (
     <main style={{ maxWidth: '900px', margin: '0 auto', padding: '0 0', textAlign: 'center' }}>
-      <h2 style={{ color: '#FFFFFC' }}>Math, ACT, and SAT Tutoring</h2>
+      <h2 style={{ color: '#FFFFFC' }}>Math, Science, ACT, and SAT Tutoring</h2>
       <div id="bio-container" style={{
         display: "flex",
         alignItems: "center",
@@ -26,18 +27,12 @@ function Home() {
         padding: "0 16px"
       }}>
         <p style={{ color: '#FFFFFC' }}>
-          Welcome! I'm Patrick Riley, a tutor specializing in math, ACT, and SAT preparation.
-          I won salutatorian of my high school class at Southwest Florida Christian Academy, and I currently attend Florida Gulf Coast University, where I am studying Software Engineering.
-          I have been tutoring since my high school days, and I learned methods of preparing for standardized tests that helped me score a 34 on the ACT.
-          I have a passion for teaching, and I love seeing students excel! Whether you're struggling with algebra, learning geometry for the first time, or preparing for the ACT or SAT, I'm here to help you succeed! Book a session today!
+          Welcome to Southwest Florida Tutoring! Our team is committed to helping students overcome challenges 
+          and reach their full potential. Whether you're struggling with math, science, or preparing for the ACT or SAT,
+          we offer personalized tutoring sessions tailored to your needs. With competitive rates and flexible scheduling, 
+          we're here to help you succeed in your academic goals. We look forward to working with you!
         </p>
-        <img src={Patrick} alt="Photo of me" id="photoPatrick" style={{
-          width: "280px",
-          maxWidth: "40vw",
-          height: "auto",
-          borderRadius: "18px",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
-        }} />
+
       </div>
       <a
         className="cta-btn"
@@ -77,6 +72,7 @@ function Home() {
           <li>SAT Preparation</li>
           <li>Chemistry</li>
           <li>Physics</li>
+          <li>Biology</li>
         </ul>
       </div>
       <div>
@@ -90,13 +86,41 @@ function Home() {
 function Contact() {
   return (
     <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
-      <h2>Contact Me</h2>
-      <p>
-        If you have any questions or would like to discuss tutoring options, feel free to reach out!
-      </p>
-      <p>Email: <a href="mailto:patrickrileytutoring@gmail.com" >patrickrileytutoring@gmail.com</a></p>
-      <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
-      <p>Youtube: <a href="https://www.youtube.com/@patrickrileytutoring">https://www.youtube.com/@patrickrileytutoring</a></p>
+      <div style={{
+        maxWidth: '800px',
+        margin: '0 auto',
+        padding: '36px',
+        borderRadius: '18px',
+        fontFamily: 'sans-serif',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+      }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          textAlign: 'center',
+          color: '#FFFFFC',
+          gap: '0',
+        }}>
+          <img src={Patrick} alt="Photo of me" id="photoPatrick" style={{
+            width: "280px",
+            maxWidth: "40vw",
+          height: "auto",
+          borderRadius: "18px",
+          boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
+        }} />
+        <h3>Patrick Riley</h3>
+        <h5>Owner/Founder</h5>
+        <p>Email: <a href="mailto:patrickrileytutoring@gmail.com" >patrickrileytutoring@gmail.com</a></p>
+        <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
+        <p>Youtube: <a href="https://www.youtube.com/@patrickrileytutoring"> Patrick Riley Tutoring</a></p>
+        </div>
+        <div>
+        </div>
+      </div>
     </main>
   );
 }
@@ -109,6 +133,7 @@ function App() {
         style={{
           minHeight: '100vh',
           background: '#191919',
+          alignContent: 'center',
         }}
       >
         <div
@@ -120,6 +145,7 @@ function App() {
             fontFamily: 'sans-serif',
             textAlign: 'center',
             width: '100%',
+            alignItems: 'center',
           }}
         >
           <div
@@ -130,7 +156,7 @@ function App() {
             }}>
             <div>
               <h1 style={{ marginTop: 0, }}>
-                <span style={{ color: '#FFFFFC' }}>Patrick Riley </span>
+                <span style={{ color: '#FFFFFC' }}>Southwest Florida </span>
                 <span style={{ color: '#0A58FF' }}>Tutoring</span>
               </h1>
             </div>
@@ -166,6 +192,7 @@ function App() {
             <Route path="/resources/calculus" element={< calculusResources />} />
             <Route path="/resources/chemistry" element={< chemistryResources />} />
             <Route path="/resources/physics" element={< physicsResources />} />
+            <Route path="/schedule/group" element={<GroupSessions />} />
           </Routes>
         </div>
       </div>
