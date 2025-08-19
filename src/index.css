@@ -15,17 +15,19 @@
   text-rendering: optimizeLegibility;
 }
 
-html, body {
-  margin: 0;
+html,
+body {
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-  .navlist:hover{
+.navlist:hover{
   color: #0A58FF !important;
 }
 
@@ -62,13 +64,6 @@ a:hover {
   color: rgb(69, 69, 69);
 }
 
-body {
-  margin: 0;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  align-items: center;
-}
 
 h1 {
   font-size: 3.2em;
@@ -103,21 +98,6 @@ h1 {
   font-weight: bold;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease‐in;
-}
-.fade-in.visible {
-  opacity: 1;
-}
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease‐in;
-}
-.fade-in.visible {
-  opacity: 1;
-}
 
 /* Shared styling for our session buttons */
 .session-button {

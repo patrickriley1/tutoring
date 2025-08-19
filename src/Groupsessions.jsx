@@ -14,7 +14,6 @@ export default function GroupSessions() {
         textAlign: "center",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",  // ← center everything in this column
       }}
     >
       <h2>Upcoming Group Sessions</h2>
@@ -25,9 +24,7 @@ export default function GroupSessions() {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",  // ← center buttons
           gap: "16px",
-          marginTop: 24,
         }}
       >
         {dates.map((d) => (

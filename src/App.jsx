@@ -13,7 +13,7 @@ import GroupSessions from "./Groupsessions.jsx";
 
 function Home() {
   return (
-    <main style={{ maxWidth: '900px', margin: '0 auto', padding: '0 0', textAlign: 'center' }}>
+    <main style={{ margin: '0 auto', padding: '0 0', textAlign: 'center' }}>
       <h2 style={{ color: '#FFFFFC' }}>Math, Science, ACT, and SAT Tutoring</h2>
       <div id="bio-container" style={{
         display: "flex",
@@ -52,7 +52,7 @@ function Home() {
       >
         Book Your First Session!
       </a>
-      <div style={{ margin: '32px 0' }}>
+      <div>
         <h3 style={{ color: '#FFFFFC', marginBottom: 16, paddingRight: 16}}>Subjects Offered:</h3>
         <ul className='subjects-list' style={{
           display: 'inline-block',
@@ -85,24 +85,19 @@ function Home() {
 
 function Contact() {
   return (
-    <main style={{ padding: '0 0', textAlign: 'center', color: '#FFFFFC' }}>
+    <main style={{ textAlign: 'center', color: '#FFFFFC', padding: '100px 0px' }}>
       <div style={{
-        maxWidth: '800px',
-        margin: '0 auto',
-        padding: '36px',
-        borderRadius: '18px',
         fontFamily: 'sans-serif',
         textAlign: 'center',
         display: 'flex',
         flexDirection: 'row',
-        alignItems: 'center',
+        gap: '150px',
       }}>
         <div style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           textAlign: 'center',
-          color: '#FFFFFC',
           gap: '0',
         }}>
           <img src={Patrick} alt="Photo of me" id="photoPatrick" style={{
@@ -112,13 +107,26 @@ function Contact() {
           borderRadius: "18px",
           boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
         }} />
-        <h3>Patrick Riley</h3>
-        <h5>Owner/Founder</h5>
+        <h2>Patrick Riley</h2>
+        <h5>Owner / Head Tutor</h5>
         <p>Email: <a href="mailto:patrickrileytutoring@gmail.com" >patrickrileytutoring@gmail.com</a></p>
         <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
         <p>Youtube: <a href="https://www.youtube.com/@patrickrileytutoring"> Patrick Riley Tutoring</a></p>
         </div>
-        <div>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          textAlign: 'center',
+          gap: '0',
+        }}>
+                  <h2 style={{
+                    paddingTop: "215px",
+                  }}>David Lunsford</h2>
+        <h5>Associate Tutor</h5>
+        <p>Email: <a href="mailto:davidlunsfordtutoring@gmail.com" >davidlunsfordtutoring@gmail.com</a></p>
+        <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
+
         </div>
       </div>
     </main>
@@ -140,7 +148,7 @@ function App() {
           style={{
             maxWidth: 800,
             margin: '0 auto',
-            padding: 36,
+            paddingTop: '32px',
             borderRadius: 18,
             fontFamily: 'sans-serif',
             textAlign: 'center',

@@ -63,26 +63,47 @@ return (
                 textAlign: "center",
               }}
             >
-              <h3 style={{ marginBottom: 16 }}>In-Person Sessions</h3>
+              <h3 style={{ marginBottom: 16 }}>Book a Session with Patrick:</h3>
               <button
                 className="session-button"
                 onClick={() => setSelectedSession("individual-math")}
               >
-                Math Tutoring
-              </button>
-              <button
-                className="session-button"
-                onClick={() => setSelectedSession("individual-act")}
-              >
-                ACT Tutoring
-              </button>
-              <button
-                className="session-button"
-                onClick={() => setSelectedSession("individual-sat")}
-              >
-                SAT Tutoring
-              </button>
-            </div>
+              Math Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-act")}
+            >
+              ACT Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-sat")}
+            >
+              SAT Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-act")}
+            >
+              Online ACT Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-sat")}
+            >
+              Online SAT Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-math")}
+            >
+              Online Math Tutoring
+            </button>
+            <p style={{ marginTop: 16 }}>
+              All online sessions are conducted via Zoom.
+            </p>
+          </div>
 
             <div
               className="column"
@@ -93,37 +114,40 @@ return (
                 borderRadius: 12,
                 padding: 24,
                 textAlign: "center",
-                display: "flex",
-                flexDirection: "column",
-                gap: "4px",
-                alignItems: "center",
-                }}>
-                <h3 style={{ marginBottom: 8 }}>Online Sessions</h3>
-                <button
-                  className="session-button"
-                  onClick={() => setSelectedSession("individual-online-act")}
-                >
-                    Online ACT Tutoring
-                </button>
-                <button
-                  className="session-button"
-                  onClick={() => setSelectedSession("individual-online-sat")} 
-                >
-                    Online SAT Tutoring
-                </button>
-                <button
-                  className="session-button"
-                  onClick={() => setSelectedSession("individual-online-math")}
-                >
-                    Online Math Tutoring
-                </button>
-                                <p style={{ marginTop: 16 }}>
-                  All online sessions are conducted via Zoom.
-                </p>
-            </div>
-                        <div
-              className="column"
-              style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "4px",
+              alignItems: "center",
+            }}>
+            <h3 style={{ marginBottom: 8 }}>Book a Session with David:</h3>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-act")}
+            >
+              Math Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-sat")}
+            >
+              Science Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-sat")}
+            >
+              SAT Tutoring
+            </button>
+            <button
+              className="session-button"
+              onClick={() => setSelectedSession("individual-online-math")}
+            >
+              ACT Tutoring
+            </button>
+          </div>
+          <div
+            className="column"
+            style={{
                 flex: 1,
                 minWidth: 280,
                 background: "rgba(255,255,255,0.05)",
