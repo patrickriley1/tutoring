@@ -17,6 +17,7 @@ const calendlyUrls = {
   "individual-online-act": "https://calendly.com/patrickrileytutoring/online-act-session",
   "individual-online-math": "https://calendly.com/patrickrileytutoring/online-math-session",
   "upcoming-group-sessions": "https://calendly.com/patrickrileytutoring/upcoming-group-sessions",
+  "david-sessions" : "https://calendly.com/davidclunsford06/new-meeting"
 }
 useEffect(() => {
     const tid = setTimeout(() => {
@@ -122,25 +123,25 @@ return (
             <h3 style={{ marginBottom: 8 }}>Book a Session with David:</h3>
             <button
               className="session-button"
-              onClick={() => setSelectedSession("individual-online-act")}
+              onClick={() => setSelectedSession("david-sessions")}
             >
               Math Tutoring
             </button>
             <button
               className="session-button"
-              onClick={() => setSelectedSession("individual-online-sat")}
+              onClick={() => setSelectedSession("david-sessions")}
             >
               Science Tutoring
             </button>
             <button
               className="session-button"
-              onClick={() => setSelectedSession("individual-online-sat")}
+              onClick={() => setSelectedSession("david-sessions")}
             >
               SAT Tutoring
             </button>
             <button
               className="session-button"
-              onClick={() => setSelectedSession("individual-online-math")}
+              onClick={() => setSelectedSession("david-sessions")}
             >
               ACT Tutoring
             </button>
