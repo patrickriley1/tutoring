@@ -124,8 +124,8 @@ function Contact() {
                     paddingTop: "215px",
                   }}>David Lunsford</h2>
         <h5>Associate Tutor</h5>
-        <p>Email: <a href="mailto:davidlunsfordtutoring@gmail.com" >davidlunsfordtutoring@gmail.com</a></p>
-        <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
+        <p>Email: <a href="mailto:davidlunsfordtutoring@gmail.com" ></a></p>
+        <p>Phone: <a href="tel:2392465711"></a></p>
 
         </div>
       </div>
@@ -263,15 +263,15 @@ function FAQ() {
 const faqData = [
   {
     question: "Where do you offer tutoring?",
-    answer: "For one-on-one sessions, I offer in-person tutoring in the Fort Myers area (location of your choice - student's house, public library, etc.) and online sessions via Zoom. For group sessions, we will typically meet at Southwest Florida Christian Academy (3750 Colonial Blvd), but I can also arrange online sessions if needed.",
+    answer: "For one-on-one sessions, we offer in-person tutoring in the Fort Myers/Estero area (location of your choice - student's house, public library, etc.) and online sessions via Zoom. For group sessions, we will typically meet at Southwest Florida Christian Academy (3750 Colonial Blvd), but we can also arrange online sessions if needed.",
   },
   {
     question: "What length of session do you recommend?",
-    answer: "I'd say it depends. For most subjects, 1 hour per week is sufficient, but that depends on a variety of factors, such as the difficulty of the subject, the urgency of improvement and others. I recommend starting with 1 hour per week for most subjects, and then we can adjust as needed.",
+    answer: "It depends. For most subjects, 1 hour per week is sufficient, but that depends on a variety of factors, such as the difficulty of the subject, the urgency of improvement and others. We recommend starting with 1 hour per week for most subjects, and then we can adjust as needed.",
   },
   {
     question: "What are your rates?",
-    answer: "My rates are $50/hr for in-person individual sessions ($40/hr for virtual) and $30/hr per student for group sessions.",
+    answer: "Our rates are $50/hr for in-person individual sessions ($40/hr for virtual) and $30/hr per student for group sessions.",
   },
   {
     question: "How do I schedule a session?",
@@ -279,7 +279,7 @@ const faqData = [
   },
   {
     question: "What is your cancellation policy?",
-    answer: "I understand that life can be unpredictable. If you need to cancel/reschedule, please try to give at least 24 hours' notice. Same-day cancellations will be charged a flat fee of $15. No-shows will be charged the full session rate.",
+    answer: "We understand that life can be unpredictable. If you need to cancel/reschedule, please try to give at least 24 hours' notice. Same-day cancellations will be charged a flat fee of $15. No-shows will be charged the full session rate.",
   }
 ];
 
