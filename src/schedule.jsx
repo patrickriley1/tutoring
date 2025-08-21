@@ -69,41 +69,14 @@ return (
                 className="session-button"
                 onClick={() => setSelectedSession("individual-math")}
               >
-              Math Tutoring
+              In-Person Tutoring
             </button>
             <button
               className="session-button"
               onClick={() => setSelectedSession("individual-act")}
             >
-              ACT Tutoring
+              Online Tutoring
             </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("individual-sat")}
-            >
-              SAT Tutoring
-            </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("individual-online-act")}
-            >
-              Online ACT Tutoring
-            </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("individual-online-sat")}
-            >
-              Online SAT Tutoring
-            </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("individual-online-math")}
-            >
-              Online Math Tutoring
-            </button>
-            <p style={{ marginTop: 16 }}>
-              All online sessions are conducted via Zoom.
-            </p>
           </div>
 
             <div
@@ -125,46 +98,17 @@ return (
               className="session-button"
               onClick={() => setSelectedSession("david-sessions")}
             >
-              Math Tutoring
+              In-Person Tutoring
             </button>
             <button
               className="session-button"
               onClick={() => setSelectedSession("david-sessions")}
             >
-              Science Tutoring
+              Online Tutoring
             </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("david-sessions")}
-            >
-              SAT Tutoring
-            </button>
-            <button
-              className="session-button"
-              onClick={() => setSelectedSession("david-sessions")}
-            >
-              ACT Tutoring
-            </button>
+
           </div>
-          <div
-            className="column"
-            style={{
-                flex: 1,
-                minWidth: 280,
-                background: "rgba(255,255,255,0.05)",
-                borderRadius: 12,
-                padding: 24,
-                textAlign: "center",
-              }}
-            >
-              <h3 style={{ marginBottom: 16 }}>Group Sessions</h3>
-              <button
-                className="session-button"
-                onClick={() => navigate("/schedule/group")}
-              >
-                Upcoming Group Sessions
-              </button>
-            </div>
+
 
           </div>
         </>
