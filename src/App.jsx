@@ -1,15 +1,12 @@
 import React from "react";
 import { Analytics } from "@vercel/analytics/react";
-import CalendlyEmbed from "./CalendlyEmbed";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { colors } from '@mui/material'
-import Schedule from "./schedule";
-import Patrick from "./Patrick.JPG";
-import Patrick1 from "./Patrick1.JPG";
 import Resources from "./resources";
 import ActResources from "./Resources/actResources";
 import Algebra1Resources from "./Resources/algebra1Resources";
-import GroupSessions from "./Groupsessions.jsx";
+import Patrick from "./Patrick.JPG";
+import "./index.css";
+import "./App.css";
 
 function Home() {
   return (
@@ -36,7 +33,7 @@ function Home() {
       </div>
       <a
         className="cta-btn"
-        href="/schedule"
+        href="/contact"
         style={{
           display: "inline-block", // This makes the link look like a button
           background: "#0A58FF", // Color of the button
@@ -85,50 +82,65 @@ function Home() {
 
 function Contact() {
   return (
-    <main style={{ textAlign: 'center', color: '#FFFFFC', padding: '100px 0px' }}>
-      <div style={{
-        fontFamily: 'sans-serif',
-        textAlign: 'center',
-        display: 'flex',
-        flexDirection: 'row',
-        gap: '150px',
-      }}>
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center',
-          gap: '0',
-        }}>
-          <img src={Patrick} alt="Photo of me" id="photoPatrick" style={{
-            width: "280px",
-            maxWidth: "40vw",
-          height: "auto",
-          borderRadius: "18px",
-          boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
-        }} />
-        <h2>Patrick Riley</h2>
-        <h5>Owner / Head Tutor</h5>
-        <p>Email: <a href="mailto:patrickrileytutoring@gmail.com" >patrickrileytutoring@gmail.com</a></p>
-        <p>Phone: <a href="tel:2392465711">239-246-5711</a></p>
-        <p>Youtube: <a href="https://www.youtube.com/@patrickrileytutoring"> Patrick Riley Tutoring</a></p>
-        </div>
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center',
-          gap: '0',
-        }}>
-                  <h2 style={{
-                    paddingTop: "215px",
-                  }}>David Lunsford</h2>
-        <h5>Associate Tutor</h5>
-        <p>Email: <a href="mailto:davidlunsfordtutoring@gmail.com" ></a></p>
-        <p>Phone: <a href="tel:2392465711"></a></p>
-
-        </div>
-      </div>
+    <main
+      style={{
+        padding: "24px 16px 64px",
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <section
+        style={{
+          width: "100%",
+          maxWidth: 560,
+          background: "rgba(255,255,255,0.04)",
+          border: "1px solid rgba(255,255,255,0.12)",
+          borderRadius: 16,
+          padding: "24px 20px",
+          color: "#FFFFFC",
+          textAlign: "center",
+          boxSizing: "border-box",
+        }}
+      >
+        <img
+          src={Patrick}
+          alt="Patrick Riley"
+          style={{
+            width: 240,
+            height: 160,
+            borderRadius: 10,
+            objectFit: "cover",
+            marginBottom: 16,
+          }}
+        />
+        <h2 style={{ margin: "0 0 4px 0" }}>Patrick Riley</h2>
+        <p style={{ margin: "0 0 20px 0", color: "#b9d0ff", fontWeight: 600 }}>
+          Head Tutor
+        </p>
+        <p style={{ margin: "8px 0" }}>
+          <strong>Phone:</strong>{" "}
+          <a href="tel:2392465711" style={{ color: "#8fb4ff" }}>
+            (239) 246-5711
+          </a>
+        </p>
+        <p style={{ margin: "8px 0" }}>
+          <strong>Email:</strong>{" "}
+          <a href="mailto:patrickrileytutoring@gmail.com" style={{ color: "#8fb4ff" }}>
+            patrickrileytutoring@gmail.com
+          </a>
+        </p>
+        <p style={{ margin: "8px 0 0 0" }}>
+          <strong>YouTube:</strong>{" "}
+          <a
+            href="https://www.youtube.com/@patrickrileytutoring"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#8fb4ff" }}
+          >
+            Patrick Riley Tutoring
+          </a>
+        </p>
+      </section>
     </main>
   );
 }
@@ -141,26 +153,25 @@ function App() {
         style={{
           minHeight: '100vh',
           background: '#191919',
-          alignContent: 'center',
+          color: '#FFFFFC',
         }}
       >
         <div
           style={{
             maxWidth: 800,
             margin: '0 auto',
-            paddingTop: '32px',
-            borderRadius: 18,
             fontFamily: 'sans-serif',
             textAlign: 'center',
             width: '100%',
-            alignItems: 'center',
           }}
         >
-          <div
+          <header
             style={{
-              margin: '0 auto',
-              alignContent: 'center',
-              justifyContent: 'center',
+              position: 'sticky',
+              top: 0,
+              zIndex: 10,
+              background: '#191919',
+              padding: '32px 0 12px',
             }}>
             <div>
               <h1 style={{ marginTop: 0, }}>
@@ -174,9 +185,6 @@ function App() {
                   <Link to="/" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Home</Link>
                 </li>
                 <li style={{ display: 'inline', marginRight: 16 }}>
-                  <Link to="/schedule" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Schedule</Link>
-                </li>
-                <li style={{ display: 'inline', marginRight: 16 }}>
                   <Link to="/contact" className="navlist" style={{ color: '#FFFFFC', textDecoration: 'none' }}>Contact</Link>
                 </li>
                 <li style={{ display: 'inline' }}>
@@ -184,24 +192,24 @@ function App() {
                 </li>
               </ul>
             </nav>
-          </div>
+          </header>
           {/* This is where the different pages are rendered */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/schedule" element={<Schedule />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resources" element={<Resources />} />
-            <Route path="/resources/act" element={< ActResources />} />
-            <Route path="/resources/sat" element={< satResources />} />
-            <Route path="/resources/algebra1" element={< Algebra1Resources />} />
-            <Route path="/resources/geometry" element={< geometryResources />} />
-            <Route path="/resources/algebra2" element={< algebra2Resources />} />
-            <Route path="/resources/precalculus" element={< precalculusResources />} />
-            <Route path="/resources/calculus" element={< calculusResources />} />
-            <Route path="/resources/chemistry" element={< chemistryResources />} />
-            <Route path="/resources/physics" element={< physicsResources />} />
-            <Route path="/schedule/group" element={<GroupSessions />} />
-          </Routes>
+          <div style={{ padding: '8px 0 40px' }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/resources/act" element={< ActResources />} />
+              <Route path="/resources/sat" element={< satResources />} />
+              <Route path="/resources/algebra1" element={< Algebra1Resources />} />
+              <Route path="/resources/geometry" element={< geometryResources />} />
+              <Route path="/resources/algebra2" element={< algebra2Resources />} />
+              <Route path="/resources/precalculus" element={< precalculusResources />} />
+              <Route path="/resources/calculus" element={< calculusResources />} />
+              <Route path="/resources/chemistry" element={< chemistryResources />} />
+              <Route path="/resources/physics" element={< physicsResources />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router><Analytics /></>
@@ -263,7 +271,7 @@ function FAQ() {
 const faqData = [
   {
     question: "Where do you offer tutoring?",
-    answer: "For one-on-one sessions, we offer in-person tutoring in the Fort Myers/Estero area (location of your choice - student's house, public library, etc.) and online sessions via Zoom. For group sessions, we will typically meet at Southwest Florida Christian Academy (3750 Colonial Blvd), but we can also arrange online sessions if needed.",
+    answer: "For one-on-one sessions, we offer in-person tutoring in the Fort Myers/Estero area (location of your choice - student's house, public library, etc.) and online sessions via Zoom.",
   },
   {
     question: "What length of session do you recommend?",
@@ -271,11 +279,11 @@ const faqData = [
   },
   {
     question: "What are your rates?",
-    answer: "Our rates are $50/hr for in-person individual sessions ($40/hr for virtual) and $30/hr per student for group sessions.",
+    answer: "Our rates are a flat rate of $50/hr for online sessions, and in-person session rates vary based on location.",
   },
   {
     question: "How do I schedule a session?",
-    answer: "Just click the 'Book Your First Session' button or visit the Schedule page. Choose an available time and you'll get a confirmation email!",
+    answer: "Just click the 'Book Your First Session' button or visit the Contact page to get started to contact us about getting started!",
   },
   {
     question: "What is your cancellation policy?",

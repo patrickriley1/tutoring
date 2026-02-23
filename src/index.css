@@ -17,14 +17,15 @@
 
 html,
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  min-height: 100%;
   text-align: center;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 .navlist:hover{
@@ -113,6 +114,7 @@ h1 {
   max-width: 240px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .session-button:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(10, 88, 255, 0.3);
@@ -124,26 +126,9 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+  
 }
 
-#bio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 36px auto;
-  box-sizing: border-box;
-  padding: 0 16px;
-}
-#photoPatrick {
-  width: 170px;
-  max-width: 40vw;
-  height: auto;
-  border-radius: 18px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
-}
 @media (max-width: 700px) {
   #bio-container {
     flex-direction: column;
@@ -152,11 +137,7 @@ h1 {
     max-width: 95vw;
     padding: 0 8px;
   }
-  #photoPatrick {
-    margin: 0;
-    width: 70vw;
-    max-width: 290px;
-  }
+
 }
 
 .resourceColumn  {
