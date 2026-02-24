@@ -1,0 +1,43 @@
+.resource-page {
+  text-align: center;
+  color: #fffffc;
+}
+
+.resource-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resource-button {
+  background: #0a58ff;
+  color: #fffffc;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  max-width: 240px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resource-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(10, 88, 255, 0.3);
+}
+
+.resource-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resource-section + .resource-section {
+  margin-top: 24px;
+}
+
+.resource-section.first {
+  margin-bottom: 16px;
+}

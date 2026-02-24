@@ -1,11 +1,86 @@
-.headshot {
-    border-radius: 20px;
-    width: 200px;
+.app-shell {
+  min-height: 100vh;
+  background: #191919;
+  color: #fffffc;
 }
 
-.flexrow {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #191919;
+  padding: 32px 0 12px;
+}
+
+.app-title {
+  margin-top: 0;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.app-title-primary {
+  color: #fffffc;
+}
+
+.app-title-accent {
+  color: #0a58ff;
+}
+
+.app-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.app-nav-item {
+  display: inline;
+  margin-right: 16px;
+}
+
+.app-nav-item-last {
+  margin-right: 0;
+}
+
+.app-nav-link {
+  color: #fffffc;
+  text-decoration: none;
+}
+
+.app-route-content {
+  padding: 8px 0 40px;
+}
+
+.navlist {
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navlist:hover {
+  color: #0a58ff !important;
+}
+
+.navlist::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0a58ff;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.navlist:hover::after,
+.navlist:focus::after {
+  width: 100%;
 }

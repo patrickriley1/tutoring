@@ -1,71 +1,72 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./resources.css";
 
 export default function ResourcesPage() {
     const navigate = useNavigate();
 
     return (
-        <main className="text-center mt-20 text-white">
-            <div className="resourceColumn">
-                <div className="testPrep">
+        <main className="resource-page">
+            <div className="resource-column">
+                <div className="resource-section first">
                     <h3>Test Prep Resources</h3>
                     <button
                         onClick={() => navigate("/resources/act")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         ACT Prep Resources
                     </button>
                     <button
                         onClick={() => navigate("/resources/sat")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         SAT Prep Resources
                     </button>
                 </div>
-                <div className="math">
+                <div className="resource-section">
                     <h3>Math Resources</h3>
                     <button
                         onClick={() => navigate("/resources/algebra1")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Algebra 1 Resources
                     </button>
                     <button   
                         onClick={() => navigate("/resources/geometry")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Geometry Resources
                     </button>
                     <button
                         onClick={() => navigate("/resources/algebra2")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Algebra 2 Resources
                     </button>
                     <button
                         onClick={() => navigate("/resources/precalculus")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Precalculus Resources
                     </button>
                     <button
                         onClick={() => navigate("/resources/calculus")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Calculus Resources
                     </button>
                 </div>
-                <div className="science">
+                <div className="resource-section">
                     <h3>Science Resources</h3>
                     <button
                         onClick={() => navigate("/resources/chemistry")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Chemistry Resources
                     </button>
                     <button
                         onClick={() => navigate("/resources/physics")}
-                        className="resourceButton"
+                        className="resource-button"
                     >
                         Physics Resources
                     </button>
@@ -75,4 +76,3 @@ export default function ResourcesPage() {
         </main>
     );
 }
-

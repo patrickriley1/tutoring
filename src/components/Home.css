@@ -1,0 +1,96 @@
+.home-page {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.home-heading {
+  color: #fffffc;
+}
+
+.home-bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 36px auto;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.home-bio-text {
+  color: #fffffc;
+}
+
+.home-cta-btn {
+  display: inline-block;
+  background: #0a58ff;
+  color: #fffffc;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-top: 24px;
+  transition: box-shadow 0.3s, background 0.3s, transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.home-cta-btn:hover {
+  box-shadow: #0a58ff 0 0 15px;
+  transform: scale(1.07);
+}
+
+.home-subjects-heading {
+  color: #fffffc;
+  margin-bottom: 16px;
+  padding-right: 16px;
+}
+
+.subjects-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.subjects-list li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 8px;
+}
+
+.subjects-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0a58ff;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.home-subjects-list {
+  display: inline-block;
+  text-align: left;
+  color: #fffffc;
+  line-height: 1.7;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.home-faq-heading {
+  color: #fffffc;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 700px) {
+  .home-bio {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    max-width: 95vw;
+    padding: 0 8px;
+  }
+}

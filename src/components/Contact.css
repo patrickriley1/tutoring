@@ -1,0 +1,47 @@
+.contact-page {
+  padding: 24px 16px 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 24px 20px;
+  color: #fffffc;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact-photo {
+  width: 240px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.contact-name {
+  margin: 0 0 4px 0;
+}
+
+.contact-title {
+  margin: 0 0 20px 0;
+  color: #b9d0ff;
+  font-weight: 600;
+}
+
+.contact-row {
+  margin: 8px 0;
+}
+
+.contact-row-last {
+  margin: 8px 0 0 0;
+}
+
+.contact-link {
+  color: #8fb4ff;
+}

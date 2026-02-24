@@ -1,0 +1,38 @@
+.faq {
+  max-width: 600px;
+  margin: 48px auto 0 auto;
+  text-align: left;
+  color: #fffffc;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #fffffc;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 12px 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-symbol {
+  font-size: 1.3em;
+}
+
+.faq-answer {
+  padding: 8px 0 0 0;
+  color: #e0e0e0;
+  font-weight: 400;
+}
